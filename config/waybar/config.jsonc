@@ -1,0 +1,100 @@
+{
+	"spacing": 4,
+	"modules-left": [
+		"hyprland/workspaces"
+		// "hyprland/window"
+	],
+	"modules-center": [
+		"clock"
+	],
+	"modules-right": [
+		"network",
+		"pulseaudio",
+		"battery",
+		"cpu",
+		"memory"
+		// "temperature",
+		// "idle_inhibitor"
+	],
+	// Modules
+	"hyprland/workspaces": {
+		"disable-scroll": true,
+		"all-outputs": true,
+		"warp-on-scroll": false,
+		"format": "{name}",
+		"format-icons": {
+			"urgent": "",
+			"active": "",
+			"default": ""
+		}
+	},
+	"hyprland/window": {
+		"format": "{initialTitle}",
+		"format-icons": {
+			"floating": "廒",
+			"fullscreen": "",
+			"pinned": "",
+			"sticky": ""
+		},
+		"on-click": "hyprctl dispatch togglewindowstick"
+	},
+	"idle_inhibitor": {
+		"format": "{icon}",
+		"format-icons": {
+			"activated": "",
+			"deactivated": ""
+		}
+	},
+	"pulseaudio": {
+		"format": "{icon} {volume}%",
+		"format-muted": " {format_source}",
+		"format-icons": {
+			"headphone": "",
+			"headset": "",
+			"default": [
+				"",
+				"",
+				""
+			]
+		},
+		"on-click": "pavucontrol"
+	},
+	"network": {
+		"format-wifi": " {essid}",
+		"format-ethernet": " {ipaddr}/{cidr}",
+		"format-disconnected": "睊 Disconnected ⚠",
+		"on-click": "kitty --detach nmtui"
+	},
+	"cpu": {
+		"format": " {usage}%"
+	},
+	"memory": {
+		"format": " {used}%"
+	},
+	"temperature": {
+		"format": " {temperatureC}°C"
+	},
+	"battery": {
+		"states": {
+			"warning": 30,
+			"critical": 15
+		},
+		"format": "{icon} {capacity}%",
+		"format-charging": " {capacity}%",
+		"format-plugged": " {capacity}%",
+		"format-icons": [
+			"",
+			"",
+			"",
+			"",
+			""
+		]
+	},
+	"clock": {
+		"format": "{:L%b %e  %I:%M %p}",
+		"format-alt": "{:%Y-%m-%dT%H:%M:%S%z}",
+		"interval": 1,
+		"locale": "en_US.UTF-8",
+		"tooltip": false
+	}
+}

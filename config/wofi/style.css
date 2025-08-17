@@ -1,0 +1,46 @@
+window {
+	background-color: rgba(18, 18, 18, 0.95);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 16px;
+	font-family: "Inter", sans-serif;
+	font-size: 14px;
+}
+
+#input {
+	background-color: rgba(255, 255, 255, 0.05);
+	border: none;
+	border-radius: 12px;
+	color: #e5e5e5;
+	padding: 8px;
+	margin: 8px;
+	outline: none;
+}
+
+#inner-box {
+	margin: 0 8px 8px 8px;
+}
+
+#outer-box {
+	margin: 6px;
+}
+
+#scroll {
+	background-color: transparent;
+}
+
+#text {
+	padding: 8px;
+	color: #c9c9c9;
+}
+
+#entry {
+	border-radius: 12px;
+	border: 2px solid transparent;
+}
+
+#entry:selected {
+	background-color: rgba(51, 204, 255, 0.1);
+	border: 2px solid #33ccff;
+	color: #e5e5e5;
+	outline: none;
+}
