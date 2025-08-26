@@ -62,7 +62,7 @@
 	"network": {
 		"format-wifi": " {essid}",
 		"format-ethernet": " {ipaddr}/{cidr}",
-		"format-disconnected": "睊 Disconnected ⚠",
+		"format-disconnected": "⚠ Disconnected",
 		"on-click": "kitty --detach nmtui"
 	},
 	"cpu": {
